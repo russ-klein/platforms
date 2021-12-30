@@ -1,0 +1,5 @@
+#!/bin/bash
+
+gcc -o uvm_dpi.so -shared -fPIC ${MODELTECH_HOME}/verilog_src/uvm-1.2/src/dpi/uvm_dpi.cc -I $MODELTECH_HOME/include -DQUESTA
+
+vlog -f files.f 

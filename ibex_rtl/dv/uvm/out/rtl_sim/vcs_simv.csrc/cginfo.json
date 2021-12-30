@@ -1,0 +1,272 @@
+{
+    "MlibObjs": {},
+    "PrevCompiledModules": {},
+    "NameTable": {
+        "_vcs_DPI_package": [
+            "_vcs_DPI_package",
+            "uM9F1",
+            "module",
+            1
+        ],
+        "ibex_defines": [
+            "ibex_defines",
+            "FJrEc",
+            "module",
+            8
+        ],
+        "vcs_paramclassrepository": [
+            "vcs_paramclassrepository",
+            "hEeZs",
+            "module",
+            2
+        ],
+        "ibex_load_store_unit": [
+            "ibex_load_store_unit",
+            "gZKca",
+            "module",
+            14
+        ],
+        "mem_model_pkg": [
+            "mem_model_pkg",
+            "tVTU0",
+            "module",
+            17
+        ],
+        "std": [
+            "std",
+            "reYIK",
+            "module",
+            4
+        ],
+        "ibex_mem_intf_agent_pkg": [
+            "ibex_mem_intf_agent_pkg",
+            "pKRq0",
+            "module",
+            19
+        ],
+        "_vcs_unit__2236483462": [
+            "_vcs_unit__2236483462",
+            "aMYZy",
+            "module",
+            3
+        ],
+        "ibex_tracer": [
+            "ibex_tracer",
+            "R58tZ",
+            "module",
+            10
+        ],
+        "uvm_pkg": [
+            "uvm_pkg",
+            "zr7M1",
+            "module",
+            5
+        ],
+        "ibex_cs_registers_0000": [
+            "ibex_cs_registers_0000",
+            "ZYcQd",
+            "module",
+            11
+        ],
+        "_vcs_msglog": [
+            "_vcs_msglog",
+            "zQBzV",
+            "module",
+            6
+        ],
+        "ibex_tracer_defines": [
+            "ibex_tracer_defines",
+            "N8I18",
+            "module",
+            9
+        ],
+        "uvm_custom_install_recording": [
+            "uvm_custom_install_recording",
+            "nhiwz",
+            "module",
+            7
+        ],
+        "ibex_int_controller": [
+            "ibex_int_controller",
+            "dZ9WD",
+            "module",
+            12
+        ],
+        "ibex_ex_block_0000": [
+            "ibex_ex_block_0000",
+            "Yw9K4",
+            "module",
+            13
+        ],
+        "core_ibex_test_pkg": [
+            "core_ibex_test_pkg",
+            "R3IJV",
+            "module",
+            22
+        ],
+        "clk_if": [
+            "clk_if",
+            "DLJvE",
+            "module",
+            15
+        ],
+        "dv_utils_pkg": [
+            "dv_utils_pkg",
+            "p833f",
+            "module",
+            16
+        ],
+        "ibex_mem_intf": [
+            "ibex_mem_intf",
+            "rNCkt",
+            "module",
+            18
+        ],
+        "core_ibex_dut_probe_if": [
+            "core_ibex_dut_probe_if",
+            "fbPCp",
+            "module",
+            20
+        ],
+        "core_ibex_env_pkg": [
+            "core_ibex_env_pkg",
+            "K6IKe",
+            "module",
+            21
+        ],
+        "core_ibex_tb_top": [
+            "core_ibex_tb_top",
+            "zDuCS",
+            "module",
+            23
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module",
+            24
+        ]
+    },
+    "CurCompileModules": [
+        "...MASTER...",
+        "...MASTER...",
+        "vcs_paramclassrepository",
+        "vcs_paramclassrepository",
+        "_vcs_DPI_package",
+        "_vcs_DPI_package",
+        "_vcs_unit__2236483462",
+        "_vcs_unit__2236483462",
+        "std",
+        "std",
+        "uvm_pkg",
+        "uvm_pkg",
+        "_vcs_msglog",
+        "_vcs_msglog",
+        "uvm_custom_install_recording",
+        "uvm_custom_install_recording",
+        "ibex_defines",
+        "ibex_defines",
+        "ibex_tracer_defines",
+        "ibex_tracer_defines",
+        "ibex_tracer",
+        "ibex_tracer",
+        "ibex_cs_registers_0000",
+        "ibex_cs_registers_0000",
+        "ibex_int_controller",
+        "ibex_int_controller",
+        "ibex_ex_block_0000",
+        "ibex_ex_block_0000",
+        "ibex_load_store_unit",
+        "ibex_load_store_unit",
+        "clk_if",
+        "clk_if",
+        "dv_utils_pkg",
+        "dv_utils_pkg",
+        "mem_model_pkg",
+        "mem_model_pkg",
+        "ibex_mem_intf",
+        "ibex_mem_intf",
+        "ibex_mem_intf_agent_pkg",
+        "ibex_mem_intf_agent_pkg",
+        "core_ibex_dut_probe_if",
+        "core_ibex_dut_probe_if",
+        "core_ibex_env_pkg",
+        "core_ibex_env_pkg",
+        "core_ibex_test_pkg",
+        "core_ibex_test_pkg",
+        "core_ibex_tb_top",
+        "core_ibex_tb_top"
+    ],
+    "CompileStrategy": "fullobj",
+    "CurCompileUdps": {},
+    "stat": {
+        "outputSizePerQuad": 93.181243386008134,
+        "ru_self_cgstart": {
+            "ru_nvcsw": 2342,
+            "ru_utime_sec": 7.6132159999999995,
+            "ru_maxrss_kb": 166752,
+            "ru_stime_sec": 0.38211099999999998,
+            "ru_majflt": 10,
+            "ru_minflt": 103969,
+            "ru_nivcsw": 2401
+        },
+        "nQuads": 112451,
+        "totalObjSize": 10478324,
+        "quadSpeed": 35484.796264804791,
+        "ru_childs_cgstart": {
+            "ru_nvcsw": 900,
+            "ru_utime_sec": 0.277279,
+            "ru_maxrss_kb": 97108,
+            "ru_stime_sec": 0.124123,
+            "ru_majflt": 53,
+            "ru_minflt": 19553,
+            "ru_nivcsw": 393
+        },
+        "nMops": 296330,
+        "ru_self_end": {
+            "ru_nvcsw": 2503,
+            "ru_utime_sec": 10.782207,
+            "ru_maxrss_kb": 170528,
+            "ru_stime_sec": 0.487873,
+            "ru_majflt": 10,
+            "ru_minflt": 107326,
+            "ru_nivcsw": 2982
+        },
+        "ru_childs_end": {
+            "ru_nvcsw": 900,
+            "ru_utime_sec": 0.277279,
+            "ru_maxrss_kb": 97108,
+            "ru_stime_sec": 0.124123,
+            "ru_majflt": 53,
+            "ru_minflt": 19553,
+            "ru_nivcsw": 393
+        },
+        "mopSpeed": 93509.258940779575,
+        "mop/quad": 2.6351922170545392,
+        "Frontend(%)": 70.609069182218448,
+        "CodeGen(%)": 29.390930817781559,
+        "peak_mem_kb": 413752
+    },
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 406817,
+        "archive": "archive.0/_24771_archive_1.a"
+    },
+    "PEModules": [],
+    "LVLData": [
+        "SIM"
+    ],
+    "CompileProcesses": [
+        "cgproc.24771.json"
+    ],
+    "Misc": {
+        "daidir_abs": "/home/russk/platforms/ibex/dv/uvm/out/rtl_sim/vcs_simv.daidir",
+        "csrc": "/home/russk/platforms/ibex/dv/uvm/out/rtl_sim/vcs_simv.csrc",
+        "cwd": "/home/russk/platforms/ibex/dv/uvm",
+        "default_output_dir": "/home/russk/platforms/ibex/dv/uvm/out/rtl_sim/vcs_simv.csrc",
+        "csrc_abs": "/home/russk/platforms/ibex/dv/uvm/out/rtl_sim/vcs_simv.csrc",
+        "daidir": "/home/russk/platforms/ibex/dv/uvm/out/rtl_sim/vcs_simv.daidir",
+        "archive_dir": "archive.0"
+    },
+    "CompileStatus": "Successful"
+}

@@ -1,0 +1,825 @@
+{
+    "reusePaths": {},
+    "Modules": {
+        "uvm_pkg": {
+            "nQuads": 51393,
+            "start_perf": [
+                9.0176951885223389,
+                8.7621070000000003,
+                0.423101,
+                409540,
+                413752,
+                1560550223.3247881
+            ],
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "end_perf": [
+                10.599079132080078,
+                10.292141000000001,
+                0.45896100000000001,
+                409540,
+                413752
+            ],
+            "nMops": 144436
+        },
+        "...MASTER...": {
+            "nQuads": 0,
+            "start_perf": [
+                7.8124790191650391,
+                7.6132939999999998,
+                0.38211499999999998,
+                407152,
+                413752,
+                1560550222.1195719
+            ],
+            "end_perf": [
+                7.820310115814209,
+                7.6169000000000002,
+                0.382245,
+                408252,
+                413752
+            ],
+            "nMops": 0
+        },
+        "ibex_load_store_unit": {
+            "nQuads": 1720,
+            "start_perf": [
+                10.856154203414917,
+                10.531166000000001,
+                0.47291699999999998,
+                409604,
+                413752,
+                1560550225.1632471
+            ],
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "end_perf": [
+                10.885493040084839,
+                10.560478,
+                0.47291699999999998,
+                409604,
+                413752
+            ],
+            "nMops": 3605
+        },
+        "mem_model_pkg": {
+            "nQuads": 0,
+            "start_perf": [
+                10.890238046646118,
+                10.564985999999999,
+                0.47391299999999997,
+                409604,
+                413752,
+                1560550225.197331
+            ],
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "end_perf": [
+                10.891196012496948,
+                10.564995,
+                0.47395399999999999,
+                409604,
+                413752
+            ],
+            "nMops": 0
+        },
+        "std": {
+            "nQuads": 224,
+            "start_perf": [
+                9.0092020034790039,
+                8.7557480000000005,
+                0.42113200000000001,
+                409540,
+                413752,
+                1560550223.3162949
+            ],
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "end_perf": [
+                9.0176570415496826,
+                8.7620699999999996,
+                0.423099,
+                409540,
+                413752
+            ],
+            "nMops": 487
+        },
+        "vcs_paramclassrepository": {
+            "nQuads": 36922,
+            "start_perf": [
+                7.8204500675201416,
+                7.6170340000000003,
+                0.38225199999999998,
+                408252,
+                413752,
+                1560550222.127543
+            ],
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "end_perf": [
+                9.0028631687164307,
+                8.7496030000000005,
+                0.42112500000000003,
+                409540,
+                413752
+            ],
+            "nMops": 96207
+        },
+        "ibex_defines": {
+            "nQuads": 0,
+            "start_perf": [
+                10.693755149841309,
+                10.381634,
+                0.46393800000000002,
+                409540,
+                413752,
+                1560550225.0008481
+            ],
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "end_perf": [
+                10.695346117019653,
+                10.383241999999999,
+                0.46393800000000002,
+                409540,
+                413752
+            ],
+            "nMops": 0
+        },
+        "_vcs_DPI_package": {
+            "nQuads": 28,
+            "start_perf": [
+                9.0029821395874023,
+                8.7497019999999992,
+                0.42113,
+                409540,
+                413752,
+                1560550223.310075
+            ],
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "end_perf": [
+                9.0075311660766602,
+                8.7541200000000003,
+                0.42113,
+                409540,
+                413752
+            ],
+            "nMops": 52
+        },
+        "ibex_mem_intf_agent_pkg": {
+            "nQuads": 2143,
+            "start_perf": [
+                10.893251180648804,
+                10.566000000000001,
+                0.47591299999999997,
+                409604,
+                413752,
+                1560550225.2003441
+            ],
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "end_perf": [
+                10.944500207901001,
+                10.614115999999999,
+                0.47791499999999998,
+                409604,
+                413752
+            ],
+            "nMops": 4963
+        },
+        "_vcs_unit__2236483462": {
+            "nQuads": 0,
+            "start_perf": [
+                9.0075671672821045,
+                8.7541550000000008,
+                0.42113,
+                409540,
+                413752,
+                1560550223.3146601
+            ],
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "end_perf": [
+                9.0091700553894043,
+                8.7557170000000006,
+                0.42113,
+                409540,
+                413752
+            ],
+            "nMops": 0
+        },
+        "ibex_tracer": {
+            "nQuads": 2987,
+            "start_perf": [
+                10.696477174758911,
+                10.383368000000001,
+                0.46492600000000001,
+                409540,
+                413752,
+                1560550225.0035701
+            ],
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "end_perf": [
+                10.747744083404541,
+                10.430517,
+                0.46893299999999999,
+                409540,
+                413752
+            ],
+            "nMops": 5518
+        },
+        "ibex_cs_registers_0000": {
+            "nQuads": 1705,
+            "start_perf": [
+                10.747801065444946,
+                10.430573000000001,
+                0.46893499999999999,
+                409540,
+                413752,
+                1560550225.054894
+            ],
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "end_perf": [
+                10.785934209823608,
+                10.463183000000001,
+                0.470918,
+                409604,
+                413752
+            ],
+            "nMops": 4445
+        },
+        "_vcs_msglog": {
+            "nQuads": 23,
+            "start_perf": [
+                10.599179029464722,
+                10.292239,
+                0.45896599999999999,
+                409540,
+                413752,
+                1560550224.9062719
+            ],
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "end_perf": [
+                10.602461099624634,
+                10.295551,
+                0.45896599999999999,
+                409540,
+                413752
+            ],
+            "nMops": 34
+        },
+        "ibex_tracer_defines": {
+            "nQuads": 0,
+            "start_perf": [
+                10.695381164550781,
+                10.383276,
+                0.46393800000000002,
+                409540,
+                413752,
+                1560550225.0024741
+            ],
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "end_perf": [
+                10.696444988250732,
+                10.383336,
+                0.46492499999999998,
+                409540,
+                413752
+            ],
+            "nMops": 0
+        },
+        "uvm_custom_install_recording": {
+            "nQuads": 3175,
+            "start_perf": [
+                10.602502107620239,
+                10.295590000000001,
+                0.45896599999999999,
+                409540,
+                413752,
+                1560550224.909595
+            ],
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "end_perf": [
+                10.693696022033691,
+                10.381577,
+                0.46393600000000002,
+                409540,
+                413752
+            ],
+            "nMops": 7914
+        },
+        "ibex_int_controller": {
+            "nQuads": 298,
+            "start_perf": [
+                10.785995006561279,
+                10.463241999999999,
+                0.47092000000000001,
+                409604,
+                413752,
+                1560550225.0930879
+            ],
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "end_perf": [
+                10.806159019470215,
+                10.483301000000001,
+                0.47092299999999998,
+                409604,
+                413752
+            ],
+            "nMops": 548
+        },
+        "ibex_ex_block_0000": {
+            "nQuads": 2430,
+            "start_perf": [
+                10.806235074996948,
+                10.483416999999999,
+                0.47092299999999998,
+                409604,
+                413752,
+                1560550225.113328
+            ],
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "end_perf": [
+                10.856067180633545,
+                10.531081,
+                0.47291299999999997,
+                409604,
+                413752
+            ],
+            "nMops": 7422
+        },
+        "core_ibex_test_pkg": {
+            "nQuads": 572,
+            "start_perf": [
+                10.951927185058594,
+                10.620431999999999,
+                0.47892899999999999,
+                409604,
+                413752,
+                1560550225.2590201
+            ],
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "end_perf": [
+                10.968055009841919,
+                10.63655,
+                0.47893400000000003,
+                409604,
+                413752
+            ],
+            "nMops": 1177
+        },
+        "clk_if": {
+            "nQuads": 71,
+            "start_perf": [
+                10.885546207427979,
+                10.56053,
+                0.47291699999999998,
+                409604,
+                413752,
+                1560550225.1926391
+            ],
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "end_perf": [
+                10.889011144638062,
+                10.563965,
+                0.47291699999999998,
+                409604,
+                413752
+            ],
+            "nMops": 132
+        },
+        "dv_utils_pkg": {
+            "nQuads": 0,
+            "start_perf": [
+                10.889052152633667,
+                10.564005,
+                0.47291699999999998,
+                409604,
+                413752,
+                1560550225.1961451
+            ],
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "end_perf": [
+                10.890187978744507,
+                10.564985999999999,
+                0.47295399999999999,
+                409604,
+                413752
+            ],
+            "nMops": 0
+        },
+        "ibex_mem_intf": {
+            "nQuads": 24,
+            "start_perf": [
+                10.891242027282715,
+                10.564995,
+                0.47491299999999997,
+                409604,
+                413752,
+                1560550225.1983349
+            ],
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "end_perf": [
+                10.893202066421509,
+                10.566000000000001,
+                0.47495500000000002,
+                409604,
+                413752
+            ],
+            "nMops": 64
+        },
+        "core_ibex_dut_probe_if": {
+            "nQuads": 0,
+            "start_perf": [
+                10.944606065750122,
+                10.614217999999999,
+                0.47791899999999998,
+                409604,
+                413752,
+                1560550225.251699
+            ],
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "end_perf": [
+                10.946233987808228,
+                10.614825,
+                0.47890100000000002,
+                409604,
+                413752
+            ],
+            "nMops": 0
+        },
+        "core_ibex_env_pkg": {
+            "nQuads": 102,
+            "start_perf": [
+                10.946268081665039,
+                10.614858,
+                0.47890300000000002,
+                409604,
+                413752,
+                1560550225.253361
+            ],
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "end_perf": [
+                10.951888084411621,
+                10.620393999999999,
+                0.47892699999999999,
+                409604,
+                413752
+            ],
+            "nMops": 300
+        },
+        "core_ibex_tb_top": {
+            "nQuads": 8634,
+            "start_perf": [
+                10.968096017837524,
+                10.63659,
+                0.47893599999999997,
+                409604,
+                413752,
+                1560550225.2751889
+            ],
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "end_perf": [
+                11.106588125228882,
+                10.772359,
+                0.48088199999999998,
+                409604,
+                413752
+            ],
+            "nMops": 19026
+        }
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "bytes": 9815,
+            "mode": 4,
+            "checksum": 0
+        },
+        "tVTU0_d": {
+            "mod": "mem_model_pkg",
+            "out": "tVTU0_d.o",
+            "bytes": 6977,
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_24771_archive_1.a"
+        },
+        "zQBzV_d": {
+            "mod": "_vcs_msglog",
+            "out": "zQBzV_d.o",
+            "bytes": 10033,
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_24771_archive_1.a"
+        },
+        "K6IKe_d": {
+            "mod": "core_ibex_env_pkg",
+            "out": "K6IKe_d.o",
+            "bytes": 30918,
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_24771_archive_1.a"
+        },
+        "hEeZs_d": {
+            "mod": "vcs_paramclassrepository",
+            "out": "hEeZs_d.o",
+            "bytes": 4615972,
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_24771_archive_1.a"
+        },
+        "DLJvE_d": {
+            "mod": "clk_if",
+            "out": "DLJvE_d.o",
+            "bytes": 13283,
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_24771_archive_1.a"
+        },
+        "uM9F1_d": {
+            "mod": "_vcs_DPI_package",
+            "out": "uM9F1_d.o",
+            "bytes": 9634,
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_24771_archive_1.a"
+        },
+        "dZ9WD_d": {
+            "mod": "ibex_int_controller",
+            "out": "dZ9WD_d.o",
+            "bytes": 16700,
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_24771_archive_1.a"
+        },
+        "nhiwz_d": {
+            "mod": "uvm_custom_install_recording",
+            "out": "nhiwz_d.o",
+            "bytes": 303444,
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_24771_archive_1.a"
+        },
+        "FJrEc_d": {
+            "mod": "ibex_defines",
+            "out": "FJrEc_d.o",
+            "bytes": 17138,
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_24771_archive_1.a"
+        },
+        "aMYZy_d": {
+            "mod": "_vcs_unit__2236483462",
+            "out": "aMYZy_d.o",
+            "bytes": 19020,
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_24771_archive_1.a"
+        },
+        "reYIK_d": {
+            "mod": "std",
+            "out": "reYIK_d.o",
+            "bytes": 34606,
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_24771_archive_1.a"
+        },
+        "N8I18_d": {
+            "mod": "ibex_tracer_defines",
+            "out": "N8I18_d.o",
+            "bytes": 6359,
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_24771_archive_1.a"
+        },
+        "rNCkt_d": {
+            "mod": "ibex_mem_intf",
+            "out": "rNCkt_d.o",
+            "bytes": 13137,
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_24771_archive_1.a"
+        },
+        "zr7M1_d": {
+            "mod": "uvm_pkg",
+            "out": "zr7M1_d.o",
+            "bytes": 4112962,
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_24771_archive_1.a"
+        },
+        "R58tZ_d": {
+            "mod": "ibex_tracer",
+            "out": "R58tZ_d.o",
+            "bytes": 170316,
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_24771_archive_1.a"
+        },
+        "ZYcQd_d": {
+            "mod": "ibex_cs_registers_0000",
+            "out": "ZYcQd_d.o",
+            "bytes": 53588,
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_24771_archive_1.a"
+        },
+        "Yw9K4_d": {
+            "mod": "ibex_ex_block_0000",
+            "out": "Yw9K4_d.o",
+            "bytes": 79858,
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_24771_archive_1.a"
+        },
+        "gZKca_d": {
+            "mod": "ibex_load_store_unit",
+            "out": "gZKca_d.o",
+            "bytes": 47446,
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_24771_archive_1.a"
+        },
+        "p833f_d": {
+            "mod": "dv_utils_pkg",
+            "out": "p833f_d.o",
+            "bytes": 6968,
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_24771_archive_1.a"
+        },
+        "pKRq0_d": {
+            "mod": "ibex_mem_intf_agent_pkg",
+            "out": "pKRq0_d.o",
+            "bytes": 177814,
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_24771_archive_1.a"
+        },
+        "fbPCp_d": {
+            "mod": "core_ibex_dut_probe_if",
+            "out": "fbPCp_d.o",
+            "bytes": 10719,
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_24771_archive_1.a"
+        },
+        "R3IJV_d": {
+            "mod": "core_ibex_test_pkg",
+            "out": "R3IJV_d.o",
+            "bytes": 62703,
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_24771_archive_1.a"
+        },
+        "zDuCS_d": {
+            "mod": "core_ibex_tb_top",
+            "out": "zDuCS_d.o",
+            "bytes": 242097,
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_24771_archive_1.a"
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.0/_24771_archive_1.a",
+            "objects": [
+                [
+                    "hEeZs_d.o",
+                    4615972
+                ],
+                [
+                    "uM9F1_d.o",
+                    9634
+                ],
+                [
+                    "aMYZy_d.o",
+                    19020
+                ],
+                [
+                    "reYIK_d.o",
+                    34606
+                ],
+                [
+                    "zr7M1_d.o",
+                    4112962
+                ],
+                [
+                    "zQBzV_d.o",
+                    10033
+                ],
+                [
+                    "nhiwz_d.o",
+                    303444
+                ],
+                [
+                    "FJrEc_d.o",
+                    17138
+                ],
+                [
+                    "N8I18_d.o",
+                    6359
+                ],
+                [
+                    "R58tZ_d.o",
+                    170316
+                ],
+                [
+                    "ZYcQd_d.o",
+                    53588
+                ],
+                [
+                    "dZ9WD_d.o",
+                    16700
+                ],
+                [
+                    "Yw9K4_d.o",
+                    79858
+                ],
+                [
+                    "gZKca_d.o",
+                    47446
+                ],
+                [
+                    "DLJvE_d.o",
+                    13283
+                ],
+                [
+                    "p833f_d.o",
+                    6968
+                ],
+                [
+                    "tVTU0_d.o",
+                    6977
+                ],
+                [
+                    "rNCkt_d.o",
+                    13137
+                ],
+                [
+                    "pKRq0_d.o",
+                    177814
+                ],
+                [
+                    "fbPCp_d.o",
+                    10719
+                ],
+                [
+                    "K6IKe_d.o",
+                    30918
+                ],
+                [
+                    "R3IJV_d.o",
+                    62703
+                ],
+                [
+                    "zDuCS_d.o",
+                    242097
+                ],
+                [
+                    "amcQwB.o",
+                    406817
+                ]
+            ],
+            "size": 10468509
+        }
+    ],
+    "stat": {
+        "ru_self_end": {
+            "ru_nvcsw": 2500,
+            "ru_utime_sec": 10.781199000000001,
+            "ru_maxrss_kb": 170528,
+            "ru_stime_sec": 0.487873,
+            "ru_majflt": 10,
+            "ru_minflt": 107318,
+            "ru_nivcsw": 2982
+        },
+        "ru_childs_end": {
+            "ru_nvcsw": 900,
+            "ru_utime_sec": 0.277279,
+            "ru_maxrss_kb": 97108,
+            "ru_stime_sec": 0.124123,
+            "ru_majflt": 53,
+            "ru_minflt": 19553,
+            "ru_nivcsw": 393
+        },
+        "peak_mem_kb": 413752
+    }
+}

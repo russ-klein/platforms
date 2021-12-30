@@ -1,0 +1,445 @@
+Command: vcs -f ibex_dv.f -full64 -l /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/compile.log \
+-sverilog -ntb_opts uvm-1.2 +define+UVM_REGEX_NO_DPI -timescale=1ns/10ps -licqueue \
+-Mdir=/home/russk/platforms/ibex/dv/uvm/out/rtl_sim/vcs_simv.csrc -o /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/vcs_simv \
++define+BOOT_ADDR=32'h8000_0000 +define+TRACE_EXECUTION -debug_access+pp -lca -kdb \
+
+                         Chronologic VCS (TM)
+         Version N-2017.12_Full64 -- Fri Jun 14 15:10:14 2019
+               Copyright (c) 1991-2017 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more 
+  information regarding list of LCA features please refer to Chapter "LCA 
+  features" in the VCS/VCS-MX Release Notes
+
+Parsing design file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/uvm_pkg.sv'
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/macros/uvm_version_defines.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/macros/uvm_global_defines.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/macros/uvm_message_defines.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/macros/uvm_phase_defines.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/macros/uvm_object_defines.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/macros/uvm_printer_defines.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/macros/uvm_tlm_defines.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/tlm1/uvm_tlm_imps.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/macros/uvm_tlm_defines.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/macros/uvm_sequence_defines.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/macros/uvm_callback_defines.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/macros/uvm_reg_defines.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/macros/uvm_deprecated_defines.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/uvm_macros.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/uvm_pkg.sv'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/dpi/uvm_dpi.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/dpi/uvm_hdl.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/dpi/uvm_dpi.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/dpi/uvm_svcmd_dpi.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/dpi/uvm_dpi.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/dpi/uvm_regex.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/dpi/uvm_dpi.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/uvm_pkg.sv'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_coreservice.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_version.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_object_globals.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_misc.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_object.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_pool.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_queue.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_factory.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_registry.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_spell_chkr.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_resource.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_resource_specializations.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_resource_db.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_config_db.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_printer.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_comparer.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_packer.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_links.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_tr_database.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_tr_stream.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_recorder.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_event_callback.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_event.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_barrier.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_callback.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/uvm_macros.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_callback.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_report_message.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_report_catcher.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_report_server.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_report_handler.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_report_object.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_transaction.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_phase.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_domain.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_bottomup_phase.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_topdown_phase.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_task_phase.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_common_phases.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_runtime_phases.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_component.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_root.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_component.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_objection.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_heartbeat.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_globals.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_cmdline_processor.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_traversal.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_base.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/uvm_pkg.sv'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/dap/uvm_dap.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/dap/uvm_set_get_dap_base.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/dap/uvm_dap.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/dap/uvm_simple_lock_dap.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/dap/uvm_dap.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/dap/uvm_get_to_lock_dap.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/dap/uvm_dap.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/dap/uvm_set_before_get_dap.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/dap/uvm_dap.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/uvm_pkg.sv'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/tlm1/uvm_tlm_ifs.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/tlm1/uvm_sqr_ifs.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/base/uvm_port_base.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/tlm1/uvm_tlm_imps.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/tlm1/uvm_imps.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/tlm1/uvm_ports.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/tlm1/uvm_exports.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/tlm1/uvm_analysis_port.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/tlm1/uvm_tlm_fifo_base.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/tlm1/uvm_tlm_fifos.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/tlm1/uvm_tlm_req_rsp.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/tlm1/uvm_sqr_connections.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/uvm_pkg.sv'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/comps/uvm_pair.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/comps/uvm_policies.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/comps/uvm_in_order_comparator.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/comps/uvm_algorithmic_comparator.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/comps/uvm_random_stimulus.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/comps/uvm_subscriber.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/comps/uvm_monitor.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/comps/uvm_driver.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/comps/uvm_push_driver.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/comps/uvm_scoreboard.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/comps/uvm_agent.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/comps/uvm_env.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/comps/uvm_test.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/comps/uvm_comps.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/uvm_pkg.sv'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/seq/uvm_seq.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/seq/uvm_sequence_item.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/seq/uvm_seq.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/seq/uvm_sequencer_base.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/seq/uvm_seq.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/seq/uvm_sequencer_analysis_fifo.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/seq/uvm_seq.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/seq/uvm_sequencer_param_base.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/seq/uvm_seq.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/seq/uvm_sequencer.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/seq/uvm_seq.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/seq/uvm_push_sequencer.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/seq/uvm_seq.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/seq/uvm_sequence_base.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/seq/uvm_seq.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/seq/uvm_sequence.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/seq/uvm_seq.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/seq/uvm_sequence_library.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/seq/uvm_seq.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/seq/uvm_sequence_builtin.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/seq/uvm_seq.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/uvm_pkg.sv'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/tlm2/uvm_tlm2.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/tlm2/uvm_tlm2_defines.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/tlm2/uvm_tlm2.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/tlm2/uvm_tlm2_time.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/tlm2/uvm_tlm2.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/tlm2/uvm_tlm2_generic_payload.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/tlm2/uvm_tlm2.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/tlm2/uvm_tlm2_ifs.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/tlm2/uvm_tlm2.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/tlm2/uvm_tlm2_imps.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/tlm2/uvm_tlm2.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/tlm2/uvm_tlm2_ports.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/tlm2/uvm_tlm2.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/tlm2/uvm_tlm2_exports.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/tlm2/uvm_tlm2.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/tlm2/uvm_tlm2_sockets_base.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/tlm2/uvm_tlm2.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/tlm2/uvm_tlm2_sockets.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/tlm2/uvm_tlm2.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/uvm_pkg.sv'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/uvm_reg_item.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/uvm_reg_adapter.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/uvm_reg_predictor.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/uvm_reg_sequence.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/uvm_reg_cbs.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/uvm_reg_backdoor.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/uvm_reg_field.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/uvm_vreg_field.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/uvm_reg.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/uvm_reg_indirect.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/uvm_reg_fifo.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/uvm_reg_file.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/uvm_mem_mam.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/uvm_vreg.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/uvm_mem.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/uvm_reg_map.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/uvm_reg_block.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/sequences/uvm_reg_hw_reset_seq.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/sequences/uvm_reg_bit_bash_seq.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/sequences/uvm_mem_walk_seq.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/sequences/uvm_mem_access_seq.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/sequences/uvm_reg_access_seq.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/sequences/uvm_reg_mem_shared_access_seq.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/sequences/uvm_reg_mem_built_in_seq.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/sequences/uvm_reg_mem_hdl_paths_seq.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/snps_uvm_reg_bank.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/uvm_pkg.sv'.
+Parsing design file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/vcs/uvm_custom_install_vcs_recorder.sv'
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/vcs/msglog.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/vcs/uvm_custom_install_vcs_recorder.sv'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/vcs/uvm_msglog_report_server.sv'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/vcs/uvm_custom_install_vcs_recorder.sv'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/vcs/uvm_vcs_recorder.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/vcs/uvm_vcs_tr_database.svh'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/vcs/uvm_vcs_tr_stream.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/vcs/uvm_vcs_tr_database.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/vcs/uvm_vcs_recorder.svh'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/vcs/uvm_custom_install_vcs_recorder.sv'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/vcs/uvm_vcs_record_interface.sv'.
+Back to file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/vcs/uvm_custom_install_vcs_recorder.sv'.
+Parsing design file '/home/russk/platforms/ibex/dv/uvm/tb/prim_clock_gating.sv'
+Parsing design file '/home/russk/platforms/ibex/rtl/ibex_defines.sv'
+Parsing design file '/home/russk/platforms/ibex/rtl/ibex_tracer_defines.sv'
+Parsing design file '/home/russk/platforms/ibex/rtl/ibex_tracer.sv'
+Parsing design file '/home/russk/platforms/ibex/rtl/ibex_alu.sv'
+Parsing design file '/home/russk/platforms/ibex/rtl/ibex_compressed_decoder.sv'
+Parsing design file '/home/russk/platforms/ibex/rtl/ibex_controller.sv'
+Parsing design file '/home/russk/platforms/ibex/rtl/ibex_cs_registers.sv'
+Parsing design file '/home/russk/platforms/ibex/rtl/ibex_decoder.sv'
+Parsing design file '/home/russk/platforms/ibex/rtl/ibex_int_controller.sv'
+Parsing design file '/home/russk/platforms/ibex/rtl/ibex_ex_block.sv'
+Parsing design file '/home/russk/platforms/ibex/rtl/ibex_id_stage.sv'
+Parsing design file '/home/russk/platforms/ibex/rtl/ibex_if_stage.sv'
+Parsing design file '/home/russk/platforms/ibex/rtl/ibex_load_store_unit.sv'
+Parsing design file '/home/russk/platforms/ibex/rtl/ibex_multdiv_slow.sv'
+Parsing design file '/home/russk/platforms/ibex/rtl/ibex_multdiv_fast.sv'
+Parsing design file '/home/russk/platforms/ibex/rtl/ibex_prefetch_buffer.sv'
+Parsing design file '/home/russk/platforms/ibex/rtl/ibex_fetch_fifo.sv'
+Parsing design file '/home/russk/platforms/ibex/rtl/ibex_register_file_ff.sv'
+Parsing design file '/home/russk/platforms/ibex/rtl/ibex_core.sv'
+Parsing design file '/home/russk/platforms/ibex/dv/uvm/common/utils/clk_if.sv'
+Parsing design file '/home/russk/platforms/ibex/dv/uvm/common/utils/dv_utils_pkg.sv'
+Parsing included file '/home/russk/platforms/ibex/dv/uvm/common/utils/dv_macros.svh'.
+Back to file '/home/russk/platforms/ibex/dv/uvm/common/utils/dv_utils_pkg.sv'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/uvm_macros.svh'.
+Back to file '/home/russk/platforms/ibex/dv/uvm/common/utils/dv_utils_pkg.sv'.
+Parsing design file '/home/russk/platforms/ibex/dv/uvm/common/mem_model/mem_model_pkg.sv'
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/uvm_macros.svh'.
+Back to file '/home/russk/platforms/ibex/dv/uvm/common/mem_model/mem_model_pkg.sv'.
+Parsing included file '/home/russk/platforms/ibex/dv/uvm/common/mem_model/mem_model.sv'.
+Back to file '/home/russk/platforms/ibex/dv/uvm/common/mem_model/mem_model_pkg.sv'.
+Parsing design file '/home/russk/platforms/ibex/dv/uvm/common/ibex_mem_intf_agent/ibex_mem_intf_agent_pkg.sv'
+Parsing included file '/home/russk/platforms/ibex/dv/uvm/common/ibex_mem_intf_agent/ibex_mem_intf.sv'.
+Back to file '/home/russk/platforms/ibex/dv/uvm/common/ibex_mem_intf_agent/ibex_mem_intf_agent_pkg.sv'.
+Parsing included file '/wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/uvm_macros.svh'.
+Back to file '/home/russk/platforms/ibex/dv/uvm/common/ibex_mem_intf_agent/ibex_mem_intf_agent_pkg.sv'.
+Parsing included file '/home/russk/platforms/ibex/dv/uvm/common/ibex_mem_intf_agent/ibex_mem_intf_seq_item.sv'.
+Back to file '/home/russk/platforms/ibex/dv/uvm/common/ibex_mem_intf_agent/ibex_mem_intf_agent_pkg.sv'.
+Parsing included file '/home/russk/platforms/ibex/dv/uvm/common/ibex_mem_intf_agent/ibex_mem_intf_monitor.sv'.
+Back to file '/home/russk/platforms/ibex/dv/uvm/common/ibex_mem_intf_agent/ibex_mem_intf_agent_pkg.sv'.
+Parsing included file '/home/russk/platforms/ibex/dv/uvm/common/ibex_mem_intf_agent/ibex_mem_intf_slave_driver.sv'.
+Back to file '/home/russk/platforms/ibex/dv/uvm/common/ibex_mem_intf_agent/ibex_mem_intf_agent_pkg.sv'.
+Parsing included file '/home/russk/platforms/ibex/dv/uvm/common/ibex_mem_intf_agent/ibex_mem_intf_slave_sequencer.sv'.
+Back to file '/home/russk/platforms/ibex/dv/uvm/common/ibex_mem_intf_agent/ibex_mem_intf_agent_pkg.sv'.
+Parsing included file '/home/russk/platforms/ibex/dv/uvm/common/ibex_mem_intf_agent/ibex_mem_intf_slave_seq_lib.sv'.
+Back to file '/home/russk/platforms/ibex/dv/uvm/common/ibex_mem_intf_agent/ibex_mem_intf_agent_pkg.sv'.
+Parsing included file '/home/russk/platforms/ibex/dv/uvm/common/ibex_mem_intf_agent/ibex_mem_intf_slave_agent.sv'.
+Back to file '/home/russk/platforms/ibex/dv/uvm/common/ibex_mem_intf_agent/ibex_mem_intf_agent_pkg.sv'.
+Parsing included file '/home/russk/platforms/ibex/dv/uvm/common/ibex_mem_intf_agent/ibex_mem_intf_master_driver.sv'.
+Back to file '/home/russk/platforms/ibex/dv/uvm/common/ibex_mem_intf_agent/ibex_mem_intf_agent_pkg.sv'.
+Parsing included file '/home/russk/platforms/ibex/dv/uvm/common/ibex_mem_intf_agent/ibex_mem_intf_master_agent.sv'.
+Back to file '/home/russk/platforms/ibex/dv/uvm/common/ibex_mem_intf_agent/ibex_mem_intf_agent_pkg.sv'.
+Parsing design file '/home/russk/platforms/ibex/dv/uvm/env/core_ibex_env_pkg.sv'
+Parsing included file '/home/russk/platforms/ibex/dv/uvm/env/core_ibex_dut_probe_if.sv'.
+Back to file '/home/russk/platforms/ibex/dv/uvm/env/core_ibex_env_pkg.sv'.
+Parsing included file '/home/russk/platforms/ibex/dv/uvm/env/core_ibex_vseqr.sv'.
+Back to file '/home/russk/platforms/ibex/dv/uvm/env/core_ibex_env_pkg.sv'.
+Parsing included file '/home/russk/platforms/ibex/dv/uvm/env/core_ibex_env.sv'.
+Back to file '/home/russk/platforms/ibex/dv/uvm/env/core_ibex_env_pkg.sv'.
+Parsing design file '/home/russk/platforms/ibex/dv/uvm/tests/core_ibex_test_pkg.sv'
+Parsing included file '/home/russk/platforms/ibex/dv/uvm/tests/core_ibex_vseq.sv'.
+Back to file '/home/russk/platforms/ibex/dv/uvm/tests/core_ibex_test_pkg.sv'.
+Parsing included file '/home/russk/platforms/ibex/dv/uvm/tests/core_ibex_base_test.sv'.
+Back to file '/home/russk/platforms/ibex/dv/uvm/tests/core_ibex_test_pkg.sv'.
+Parsing design file '/home/russk/platforms/ibex/dv/uvm/tb/core_ibex_tb_top.sv'
+Top Level Modules:
+       uvm_custom_install_recording
+       core_ibex_tb_top
+TimeScale is 1 ns / 10 ps
+
+Warning-[TFIPC] Too few instance port connections
+/home/russk/platforms/ibex/dv/uvm/tb/core_ibex_tb_top.sv, 16
+"ibex_core dut( .clk_i (clk),  .rst_ni (rst_n),  .test_en_i (1'b1),  .core_id_i ('0),  .cluster_id_i ('0),  .boot_addr_i (32'h80000000),  .irq_i ('0),  .irq_id_i ('0),  .debug_req_i ('0),  .fetch_enable_i (fetch_enable));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+Starting vcs inline pass...
+21 modules and 0 UDP read.
+recompiling package vcs_paramclassrepository
+recompiling package _vcs_DPI_package
+recompiling package uvm_pkg
+recompiling package _vcs_msglog
+recompiling module uvm_custom_install_recording
+recompiling package ibex_defines
+recompiling package ibex_tracer_defines
+recompiling module ibex_tracer
+recompiling module ibex_cs_registers
+recompiling module ibex_int_controller
+recompiling module ibex_ex_block
+recompiling module ibex_load_store_unit
+recompiling module clk_if
+recompiling package dv_utils_pkg
+recompiling package mem_model_pkg
+recompiling module ibex_mem_intf
+recompiling package ibex_mem_intf_agent_pkg
+recompiling module core_ibex_dut_probe_if
+recompiling package core_ibex_env_pkg
+recompiling package core_ibex_test_pkg
+recompiling module core_ibex_tb_top
+All of 21 modules done
+make[1]: Entering directory `/home/russk/platforms/ibex/dv/uvm/out/rtl_sim/vcs_simv.csrc' \
+
+rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+g++ -w  -pipe -DVCSMX -DUVM_DPI_DO_TYPE_CHECK -fPIC -O -I/wv/hlstools/vcs/N-2017.12/include \
+-c /wv/hlstools/vcs/N-2017.12/etc/uvm-1.2/dpi/uvm_dpi.cc
+if [ -x /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/vcs_simv ]; then chmod -x /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/vcs_simv; \
+fi
+g++  -o /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/vcs_simv   -Wl,-rpath-link=./ \
+-Wl,-rpath='$ORIGIN'/vcs_simv.daidir/ -Wl,-rpath=./vcs_simv.daidir/ -Wl,-rpath='$ORIGIN'/vcs_simv.daidir//scsim.db.dir \
+-rdynamic  uvm_dpi.o   objs/amcQw_d.o   _24771_archive_1.so  SIM_l.o      rmapats_mop.o \
+rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          -lnuma /wv/hlstools/vcs/N-2017.12/linux64/lib/libzerosoft_rt_stubs.so \
+/wv/hlstools/vcs/N-2017.12/linux64/lib/libvirsim.so /wv/hlstools/vcs/N-2017.12/linux64/lib/liberrorinf.so \
+/wv/hlstools/vcs/N-2017.12/linux64/lib/libsnpsmalloc.so /wv/hlstools/vcs/N-2017.12/linux64/lib/libvfs.so \
+/wv/hlstools/vcs/N-2017.12/linux64/lib/libvcsnew.so /wv/hlstools/vcs/N-2017.12/linux64/lib/libsimprofile.so \
+/wv/hlstools/vcs/N-2017.12/linux64/lib/libuclinative.so /wv/hlstools/vcs/N-2017.12/linux64/lib/vcs_tls.o \
+-Wl,-whole-archive /wv/hlstools/vcs/N-2017.12/linux64/lib/libvcsucli.so -Wl,-no-whole-archive \
+./../vcs_simv.daidir/vc_hdrs.o    /wv/hlstools/vcs/N-2017.12/linux64/lib/vcs_save_restore_new.o \
+-ldl  -lc -lm -lpthread -ldl 
+/home/russk/platforms/ibex/dv/uvm/out/rtl_sim/vcs_simv up to date
+make[1]: Leaving directory `/home/russk/platforms/ibex/dv/uvm/out/rtl_sim/vcs_simv.csrc' \
+
+CPU time: 11.730 seconds to compile + .347 seconds to elab + .460 seconds to link

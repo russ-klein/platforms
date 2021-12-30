@@ -1,0 +1,297 @@
+{
+    "reusePaths": {},
+    "Modules": {
+        "...MASTER...": {
+            "nMops": 0,
+            "start_perf": [
+                6.087399959564209,
+                5.189781,
+                0.18659600000000001,
+                297500,
+                306068,
+                1560550205.826447
+            ],
+            "nQuads": 0,
+            "end_perf": [
+                6.096066951751709,
+                5.1917580000000001,
+                0.18762899999999999,
+                298536,
+                306068
+            ]
+        },
+        "riscv_instr_test_pkg": {
+            "nMops": 4843,
+            "start_perf": [
+                8.8469569683074951,
+                7.8391599999999997,
+                0.25528800000000001,
+                301828,
+                306068,
+                1560550208.586004
+            ],
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nQuads": 1922,
+            "end_perf": [
+                8.8999788761138916,
+                7.8901370000000002,
+                0.25728699999999999,
+                301828,
+                306068
+            ]
+        },
+        "vcs_paramclassrepository": {
+            "nMops": 90608,
+            "start_perf": [
+                6.0961349010467529,
+                5.1918240000000004,
+                0.18763199999999999,
+                298536,
+                306068,
+                1560550205.835182
+            ],
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nQuads": 35602,
+            "end_perf": [
+                7.0821750164031982,
+                6.1330609999999997,
+                0.21454699999999999,
+                299696,
+                306068
+            ]
+        },
+        "_vcs_DPI_package": {
+            "nMops": 50,
+            "start_perf": [
+                7.0822348594665527,
+                6.1331160000000002,
+                0.21454899999999999,
+                299696,
+                306068,
+                1560550206.8212819
+            ],
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nQuads": 27,
+            "end_perf": [
+                7.0852899551391602,
+                6.1349349999999996,
+                0.215505,
+                299696,
+                306068
+            ]
+        },
+        "std": {
+            "nMops": 462,
+            "start_perf": [
+                7.0853228569030762,
+                6.1349669999999996,
+                0.215507,
+                299696,
+                306068,
+                1560550206.8243699
+            ],
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nQuads": 213,
+            "end_perf": [
+                7.0920379161834717,
+                6.1406340000000004,
+                0.216528,
+                299696,
+                306068
+            ]
+        },
+        "riscv_instr_gen_tb_top": {
+            "nMops": 24,
+            "start_perf": [
+                8.9000329971313477,
+                7.8901900000000005,
+                0.25728800000000002,
+                301828,
+                306068,
+                1560550208.63908
+            ],
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nQuads": 19,
+            "end_perf": [
+                8.9115059375762939,
+                7.8996829999999996,
+                0.25926700000000003,
+                301828,
+                306068
+            ]
+        },
+        "uvm_pkg": {
+            "nMops": 134811,
+            "start_perf": [
+                7.0920698642730713,
+                6.1406660000000004,
+                0.216529,
+                299696,
+                306068,
+                1560550206.8311169
+            ],
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nQuads": 47282,
+            "end_perf": [
+                8.4285719394683838,
+                7.4451200000000002,
+                0.239425,
+                301828,
+                306068
+            ]
+        },
+        "riscv_instr_pkg": {
+            "nMops": 47345,
+            "start_perf": [
+                8.4286379814147949,
+                7.4451799999999997,
+                0.239426,
+                301828,
+                306068,
+                1560550208.167685
+            ],
+            "Compiled": "Yes",
+            "Compiled Times": 1,
+            "nQuads": 18480,
+            "end_perf": [
+                8.8469018936157227,
+                7.839105,
+                0.25528699999999999,
+                301828,
+                306068
+            ]
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.0/_23993_archive_1.a",
+            "objects": [
+                [
+                    "hEeZs_d.o",
+                    4193172
+                ],
+                [
+                    "uM9F1_d.o",
+                    9642
+                ],
+                [
+                    "reYIK_d.o",
+                    33510
+                ],
+                [
+                    "zr7M1_d.o",
+                    3772448
+                ],
+                [
+                    "ZW9aD_d.o",
+                    1350232
+                ],
+                [
+                    "ejhbY_d.o",
+                    286943
+                ],
+                [
+                    "PLawZ_d.o",
+                    8590
+                ],
+                [
+                    "amcQwB.o",
+                    401385
+                ]
+            ],
+            "size": 10055922
+        }
+    ],
+    "CompUnits": {
+        "PLawZ_d": {
+            "mod": "riscv_instr_gen_tb_top",
+            "checksum": 0,
+            "out": "PLawZ_d.o",
+            "bytes": 8590,
+            "mode": 4,
+            "archive": "archive.0/_23993_archive_1.a"
+        },
+        "uM9F1_d": {
+            "mod": "_vcs_DPI_package",
+            "checksum": 0,
+            "out": "uM9F1_d.o",
+            "bytes": 9642,
+            "mode": 4,
+            "archive": "archive.0/_23993_archive_1.a"
+        },
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "checksum": 0,
+            "out": "objs/amcQw_d.o",
+            "bytes": 8603,
+            "mode": 4
+        },
+        "ZW9aD_d": {
+            "mod": "riscv_instr_pkg",
+            "checksum": 0,
+            "out": "ZW9aD_d.o",
+            "bytes": 1350232,
+            "mode": 4,
+            "archive": "archive.0/_23993_archive_1.a"
+        },
+        "hEeZs_d": {
+            "mod": "vcs_paramclassrepository",
+            "checksum": 0,
+            "out": "hEeZs_d.o",
+            "bytes": 4193172,
+            "mode": 4,
+            "archive": "archive.0/_23993_archive_1.a"
+        },
+        "reYIK_d": {
+            "mod": "std",
+            "checksum": 0,
+            "out": "reYIK_d.o",
+            "bytes": 33510,
+            "mode": 4,
+            "archive": "archive.0/_23993_archive_1.a"
+        },
+        "ejhbY_d": {
+            "mod": "riscv_instr_test_pkg",
+            "checksum": 0,
+            "out": "ejhbY_d.o",
+            "bytes": 286943,
+            "mode": 4,
+            "archive": "archive.0/_23993_archive_1.a"
+        },
+        "zr7M1_d": {
+            "mod": "uvm_pkg",
+            "checksum": 0,
+            "out": "zr7M1_d.o",
+            "bytes": 3772448,
+            "mode": 4,
+            "archive": "archive.0/_23993_archive_1.a"
+        }
+    },
+    "stat": {
+        "ru_self_end": {
+            "ru_stime_sec": 0.26321899999999998,
+            "ru_utime_sec": 7.90855,
+            "ru_maxrss_kb": 137252,
+            "ru_minflt": 57213,
+            "ru_nvcsw": 1529,
+            "ru_majflt": 176,
+            "ru_nivcsw": 3839
+        },
+        "ru_childs_end": {
+            "ru_stime_sec": 0.0,
+            "ru_utime_sec": 0.0,
+            "ru_maxrss_kb": 0,
+            "ru_minflt": 0,
+            "ru_nvcsw": 0,
+            "ru_majflt": 0,
+            "ru_nivcsw": 0
+        },
+        "peak_mem_kb": 306068
+    }
+}

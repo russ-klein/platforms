@@ -1,0 +1,500 @@
+  545  cd ..
+  546  ls
+  547  cd ../..
+  548  vi verification.log 
+  549  vi setup.sh 
+  550  source setup.sh 
+  551  cd ibex/dv/uvm/
+  552  ( make ) >& verification.log 
+  553  pwd
+  554  vi verification.log 
+  555  spike
+  556  export PATH=$PATH:/home/russk/platforms/riscv-gcc/bin
+  557  spike
+  558  grep -r "Running spike" *
+  559  grep -r "Running spike" ../../*
+  560  vi ../../vendor/google_riscv-dv/iss_sim
+  561  ( make ) >& verification.log 
+  562  vi verification.log 
+  563  vi ../../vendor/google_riscv-dv/iss_sim
+  564  ( make ) >& verification.log 
+  565  vi verification.log 
+  566  vi ../../vendor/google_riscv-dv/iss_sim
+  567  ( make ) >& verification.log 
+  568  vi verification.log
+  569  vi ../../vendor/google_riscv-dv/iss_sim
+  570  spike
+  571  spike timeout
+  572  cd ../..
+  573  ls
+  574  cd ..
+  575  ls
+  576  mv ibex ibex.save
+  577  tar -xzf ibex.tgz 
+  578  cd ibex
+  579  ls
+  580  cd vendor/
+  581  ls
+  582  cd google_riscv-dv
+  583  ls
+  584  vi iss_sim
+  585  timeout
+  586  timeout 60s
+  587  timeout --help
+  588  cd ../../../ibex.save/dv/uvm/
+  589  vi verification.log 
+  590  file /home/russk/platforms/riscv-gcc/bin/spike
+  591  spike
+  592  grep spike verification.log 
+  593  /home/russk/platforms/riscv-gcc/bin/spike --isa=rv32imc -l /home/russk/platforms/ibex/dv/uvm/out/instr_gen/asm_tests/riscv_instr_base_test.0.S.o
+  594  /home/russk/platforms/riscv-gcc/bin/spike --isa=rv32imc -l /home/russk/platforms/ibex.save/dv/uvm/out/instr_gen/asm_tests/riscv_instr_base_test.0.S.o
+  595  grep spike verification.log 
+  596  timeout 60 /home/russk/platforms/riscv-gcc/bin/spike --isa=rv32imc -l /home/russk/platforms/ibex.save/dv/uvm/out/instr_gen/asm_tests/riscv_instr_base_test.0.S.o
+  597  grep spike verification.log 
+  598  ls out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.log 
+  599  cat out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.log
+  600  cd ../..
+  601  ls
+  602  cd ..
+  603  ls
+  604  mv ibex ibex.new
+  605  mv ibex.save/ ibex
+  606  cd ibex
+  607  ls
+  608  cd dv
+  609  cd uvm/
+  610  ls
+  611  vi verification.log 
+  612  cat /home/russk/platforms/ibex/dv/uvm/out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.log
+  613  vi Makefile 
+  614  vi compare 
+  615  vi verification.log 
+  616  cat /home/russk/platforms/ibex/dv/uvm/out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.log
+  617  ls
+  618  find ../../ -name "*.py" -print 
+  619  vi ../../vendor/google_riscv-dv/scripts/spike_log_to_trace_csv.py
+  620  ( make ) >& verification.log 
+  621  vi verification.log 
+  622  vi ../../vendor/google_riscv-dv/scripts/spike_log_to_trace_csv.py
+  623  vi ../../vendor/google_riscv-dv/scripts/spike_log_to_trace_csv.py
+  624  ( make ) >& verification.log 
+  625  vi verification.log 
+  626  vi ../../vendor/google_riscv-dv/scripts/spike_log_to_trace_csv.py
+  627  ( make ) >& verification.log 
+  628  vi verification.log 
+  629  vi ../../vendor/google_riscv-dv/scripts/spike_log_to_trace_csv.py
+  630  ( make ) >& verification.log 
+  631  vi verification.log 
+  632  cat /home/russk/platforms/ibex/dv/uvm/out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.log
+  633  :q
+  634  vi Makefile
+  635  vi compare 
+  636  grep -r \$reportfile ../../*
+  637  grep -r \$report_file ../../*
+  638  echo $report_file
+  639  vi compare 
+  640  find . -name regr.log
+  641  more out/regr.log 
+  642  vi /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/riscv_instr_base_test.0/trace_core_00_0.log
+  643  vi compare 
+  644  vi Makefile
+  645  ls
+  646  vi verification.log 
+  647  vi /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/riscv_instr_base_test.0/trace_core_00_0.log
+  648  vi compare 
+  649  vi /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/riscv_instr_base_test.0/trace_core_00_0.csv 
+  650  vi /home/russk/platforms/ibex/dv/uvm/out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.csv 
+  651  vi /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/riscv_instr_base_test.0/trace_core_00_0.csv 
+  652  vi /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/riscv_instr_base_test.0/trace_core_00_0.log
+  653  find . -name "*.log" -print
+  654  vi out/rtl_sim/riscv_instr_base_test.0/*.log
+  655  vi out/instr_gen/spike_sim/*.log
+  656  vi out/rtl_sim/riscv_instr_base_test.0/trace_core_00_0.log 
+  657  vi compare
+  658  find instr_trace_compare.py
+  659  find . -name instr_trace_compare.py
+  660  find ../.. -name instr_trace_compare.py
+  661  vi ../../vendor/google_riscv-dv/scripts/instr_trace_compare.py 
+  662  vi compare
+  663  vi verification.log 
+  664  vi compare
+  665  ( make ) >& verification.log 
+  666  vi verification.log 
+  667  vi /home/russk/platforms/ibex/dv/uvm/out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.log
+  668  awk '{print $3 $4}' /home/russk/platforms/ibex/dv/uvm/out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.log
+  669  awk '{print $3 ", " $4}' /home/russk/platforms/ibex/dv/uvm/out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.log
+  670  vi /home/russk/platforms/ibex/dv/uvm/out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.log
+  671  vi compare
+  672  awk '{print $3 ", " $4}' /home/russk/platforms/ibex/dv/uvm/out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.log | sed -i "/^0xffffffff/s///"
+  673  awk '{print $3 ", " $4}' /home/russk/platforms/ibex/dv/uvm/out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.log | sed -i "/^0xffffffff/s///" -
+  674  awk '{print $3 ", " $4}' /home/russk/platforms/ibex/dv/uvm/out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.log | sed -e "/^0xffffffff/s///" -
+  675  awk '{print $3 ", " $4}' /home/russk/platforms/ibex/dv/uvm/out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.log | sed -e "/^0xffffffff/s///"
+  676  awk '{print $3 ", " $4}' /home/russk/platforms/ibex/dv/uvm/out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.log | sed -e "/^0xffffffff/s///" | sed -e "/(0x/s///"
+  677  awk '{print $3 " " $4}' /home/russk/platforms/ibex/dv/uvm/out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.log | sed -e "/^0xffffffff/s///" | sed -e "/(0x/s///" | sed -e "/)/s///"
+  678  awk '{print $3 " " $4}' /home/russk/platforms/ibex/dv/uvm/out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.log | sed -e "/^0xffffffff/s///" | sed -e "/(0x/s///" | sed -e "/)/s///"
+  679  vi compare
+  680  (make) >& verification.log 
+  681  vi verification.log 
+  682  vi /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/riscv_instr_base_test.0/trace_core_00_0.log
+  683  vi compare
+  684  (make) >& verification.log 
+  685  vi verification.log 
+  686  vi compare 
+  687  (make) >& verification.log 
+  688  pwd
+  689  vi verification.log 
+  690  vi verification.log 
+  691  vi compare 
+  692  (make) >& verification.log 
+  693  vi verification.log 
+  694  (make) >& verification.log 
+  695  vi verification.log 
+  696  vi compare
+  697  (make) >& verification.log 
+  698  vi verification.log 
+  699  (make) >& verification.log 
+  700  (make) >& verification.log 
+  701  vi verification.log 
+  702  vi compare 
+  703  (make) >& verification.log 
+  704  vi verification.log 
+  705  vi compare 
+  706  ( make ) >& verification.log 
+  707  vi verification.log 
+  708  grep "I am here" *
+  709  grep -r -e "I am here" ../../*
+  710  vi ../../vendor/google_riscv-dv/iss_sim 
+  711  ( make ) >& verification.log 
+  712  vi verification.log 
+  713  vi compare 
+  714  ( make ) >& verification.log 
+  715  vi verification.log 
+  716  vi compare 
+  717  ( make ) >& verification.log 
+  718  vi verification.log 
+  719  grep created verification.log 
+  720  grep create verification.log 
+  721  vi verification.log 
+  722  grep Create verification.log 
+  723  vi /home/russk/platforms/ibex/dv/uvm/out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.csv /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/riscv_instr_base_test.0/trace_core_00_0.csv
+  724  ls home/russk/platforms/ibex/dv/uvm/out/rtl_sim/riscv_instr_base_test.0/
+  725  ls /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/riscv_instr_base_test.0/
+  726  ls /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/riscv_instr_base_test.0/trace_core_00_0.log
+  727  vi /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/riscv_instr_base_test.0/trace_core_00_0.log
+  728  awk '{print $3 " " $4}' /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/riscv_instr_base_test.0/trace_core_00_0.log
+  729  vi /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/riscv_instr_base_test.0/trace_core_00_0.log
+  730  vi compare 
+  731  awk '{print $3 " " $4}' /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/riscv_instr_base_test.0/trace_core_00_0.log 
+  732  vi /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/riscv_instr_base_test.0/trace_core_00_0.csv 
+  733  awk '{print $3 " " $4}' /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/riscv_instr_base_test.0/trace_core_00_0.log > /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/riscv_instr_base_test.0/trace_core_00_0.csv
+  734  vi /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/riscv_instr_base_test.0/trace_core_00_0.csv
+  735  vi /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/riscv_instr_base_test.0/trace_core_00_0.csv
+  736  vi compare 
+  737  ( make ) >& verification.log 
+  738  vi verification.log 
+  739  grep Crea verification.log 
+  740  sdiff /home/russk/platforms/ibex/dv/uvm/out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.csv /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/riscv_instr_base_test.0/trace_core_00_0.csv
+  741  vi Makefile 
+  742  vi rtl_sim
+  743  vi Makefile 
+  744  vi sim
+  745  ( make ) >& verification.log 
+  746  vi verification.log
+  747  ls -l out/instr_gen/asm_tests/riscv_instr_base_test.0.S*
+  748  file out/instr_gen/asm_tests/riscv_instr_base_test.0.S*.o
+  749  fromelf
+  750  elfread
+  751  readelf
+  752  sdiff /home/russk/platforms/ibex/dv/uvm/out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.csv /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/riscv_instr_base_test.0/trace_core_00_0.csv
+  753  ( make ) >& verification.log 
+  754  sdiff /home/russk/platforms/ibex/dv/uvm/out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.csv /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/riscv_instr_base_test.0/trace_core_00_0.csv
+  755  pwd
+  756  vi sim
+  757  ls -l out/instr_gen/compile.log 
+  758  more out/instr_gen/compile.log
+  759  vi Makefile 
+  760  make clean
+  761  ls out
+  762  ( make ) >& verification.log 
+  763  ls out/
+  764  ls out/instr_gen/
+  765  ls out/instr_gen/asm_tests/riscv_instr_base_test.0.S*
+  766  riscv64-unknown-elf-objdump out/instr_gen/asm_tests/riscv_instr_base_test.0.S.o
+  767  riscv64-unknown-elf-objdump out/instr_gen/asm_tests/riscv_instr_base_test.0.S.o -d
+  768  :q
+  769  ls *.bin
+  770  riscv64-unknown-elf-objdump out/instr_gen/asm_tests/riscv_instr_base_test.0.S.bin -d
+  771  file -d.bin
+  772  file out/instr_gen/asm_tests/riscv_instr_base_test.0.S.bin
+  773  od -hav out/instr_gen/asm_tests/riscv_instr_base_test.0.S.bin | less
+  774  man od
+  775  od --address_radix=hex -hv out/instr_gen/asm_tests/riscv_instr_base_test.0.S.bin | less
+  776  od --address-radix=hex -hv out/instr_gen/asm_tests/riscv_instr_base_test.0.S.bin | less
+  777  od --address-radix=x -hv out/instr_gen/asm_tests/riscv_instr_base_test.0.S.bin | less
+  778  riscv64-unknown-elf-objdump out/instr_gen/asm_tests/riscv_instr_base_test.0.S.bin -d | less
+  779  riscv64-unknown-elf-objdump out/instr_gen/asm_tests/riscv_instr_base_test.0.S.o -d | less
+  780  vi out/rtl_sim/riscv_instr_base_test.0/trace_core_00_0.log 
+  781  riscv64-unknown-elf-objdump out/instr_gen/asm_tests/riscv_instr_base_test.0.S.o -d | less
+  782  vi out/rtl_sim/riscv_instr_base_test.0/trace_core_00_0.log 
+  783  riscv64-unknown-elf-objdump out/instr_gen/asm_tests/riscv_instr_base_test.0.S.o -d | less
+  784  sdiff /home/russk/platforms/ibex/dv/uvm/out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.csv /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/riscv_instr_base_test.0/trace_core_00_0.csv
+  785  sdiff /home/russk/platforms/ibex/dv/uvm/out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.csv /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/riscv_instr_base_test.0/trace_core_00_0.csv |less
+  786  riscv64-unknown-elf-objdump out/instr_gen/asm_tests/riscv_instr_base_test.0.S.o -d | less
+  787  pwd
+  788  ls out/instr_gen/asm_tests/riscv_instr_base_test.0.S
+  789  vi out/instr_gen/asm_tests/riscv_instr_base_test.0.S
+  790  riscv64-unknown-elf-objdump out/instr_gen/asm_tests/riscv_instr_base_test.0.S.o -d | less
+  791  vi out/instr_gen/asm_tests/riscv_instr_base_test.0.S
+  792  riscv64-unknown-elf-objdump -M numeric out/instr_gen/asm_tests/riscv_instr_base_test.0.S.o -d | less
+  793  vi out/instr_gen/asm_tests/riscv_instr_base_test.0.S
+  794  pwd
+  795  vi compare 
+  796  ( make ) >& verification.log 
+  797  vi verification.log 
+  798  sdiff /home/russk/platforms/ibex/dv/uvm/out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.csv /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/riscv_instr_base_test.0/trace_core_00_0.csv |less
+  799  vi verification.log 
+  800  vi compare 
+  801  ( make ) >& verification.log 
+  802  vi verification.log 
+  803  sdiff /home/russk/platforms/ibex/dv/uvm/out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.csv /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/riscv_instr_base_test.0/trace_core_00_0.csv |less
+  804  man diff
+  805  wc -l /home/russk/platforms/ibex/dv/uvm/out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.csv
+  806  echo $status
+  807  a = wc -l /home/russk/platforms/ibex/dv/uvm/out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.csv
+  808  wc -l /home/russk/platforms/ibex/dv/uvm/out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.csv
+  809  echo $?
+  810  wc -l /home/russk/platforms/ibex/dv/uvm/out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.csv | awk '{print $1}'
+  811  a = $(wc -l /home/russk/platforms/ibex/dv/uvm/out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.csv | awk '{print $1}')
+  812  export a=$(wc -l /home/russk/platforms/ibex/dv/uvm/out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.csv | awk '{print $1}')
+  813  a
+  814  echo $a
+  815  sdiff /home/russk/platforms/ibex/dv/uvm/out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.csv /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/riscv_instr_base_test.0/trace_core_00_0.csv |less
+  816  diff /home/russk/platforms/ibex/dv/uvm/out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.csv /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/riscv_instr_base_test.0/trace_core_00_0.csv |less
+  817  diff /home/russk/platforms/ibex/dv/uvm/out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.csv /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/riscv_instr_base_test.0/trace_core_00_0.csv
+  818  b = $(diff /home/russk/platforms/ibex/dv/uvm/out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.csv /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/riscv_instr_base_test.0/trace_core_00_0.csv)
+  819  export b=$(diff /home/russk/platforms/ibex/dv/uvm/out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.csv /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/riscv_instr_base_test.0/trace_core_00_0.csv)
+  820  echo $b
+  821  vi /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/riscv_instr_base_test.0/trace_core_00_0.csv
+  822  export b=$(diff /home/russk/platforms/ibex/dv/uvm/out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.csv /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/riscv_instr_base_test.0/trace_core_00_0.csv)
+  823  echo $b
+  824  export b=$(diff /home/russk/platforms/ibex/dv/uvm/out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.csv /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/riscv_instr_base_test.0/trace_core_00_0.csv | wc -l)
+  825  echo $b
+  826  export b=$(sdiff /home/russk/platforms/ibex/dv/uvm/out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.csv /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/riscv_instr_base_test.0/trace_core_00_0.csv | grep -e ">|<" | wc -l)
+  827  echo $b
+  828  export b=$(sdiff /home/russk/platforms/ibex/dv/uvm/out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.csv /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/riscv_instr_base_test.0/trace_core_00_0.csv | grep -e "[>|<]" | wc -l)
+  829  echo $b
+  830  vi /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/riscv_instr_base_test.0/trace_core_00_0.csv
+  831  export b=$(sdiff /home/russk/platforms/ibex/dv/uvm/out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.csv /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/riscv_instr_base_test.0/trace_core_00_0.csv | grep -e "[>|<]" | wc -l)
+  832  echo $b
+  833  vi compare 
+  834  vi compare 
+  835  ( make ) >& verification.log 
+  836  vi verification.log 
+  837  vi compare 
+  838  vi verification.log 
+  839  ( make ) >& verification.log 
+  840  vi verification.log 
+  841  ( make ) >& verification.log 
+  842  vi compare 
+  843  wc -l /home/russk/platforms/ibex/dv/uvm/out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.csv | awk '{print $1}'
+  844  vi compare 
+  845  ( make ) >& verification.log 
+  846  vi verification.log 
+  847  vi verification.log 
+  848  vi compare 
+  849  ( make ) >& verification.log 
+  850  vi verification.log 
+  851  wc -l /home/russk/platforms/ibex/dv/uvm/out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.csv | awk '{print $1}'
+  852  wc -l /home/russk/platforms/ibex/dv/uvm/out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.csv 
+  853  vi /home/russk/platforms/ibex/dv/uvm/out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.csv
+  854  ( make ) >& verification.log 
+  855  vi /home/russk/platforms/ibex/dv/uvm/out/instr_gen/spike_sim/riscv_instr_base_test.0.S.o.csv
+  856  vi verification.log 
+  857  ( make ) >& verification.log 
+  858  vi ver
+  859  vi verification.log 
+  860  pwd
+  861  ls ../..
+  862  ../../..
+  863  ls ../../..
+  864  ls ../../../ibex.questa/dv/uvm/
+  865  ls ../../../ibex.questa/dv/uvm/Makefile.questa
+  866  vi ../../../ibex.questa/dv/uvm/Makefile.questa
+  867  cp ../../../ibex.questa/dv/uvm/Makefile.questa .
+  868  ( make -f Makefile.questa ) >& verification.log 
+  869  vi verification.log 
+  870  vi Makefile.questa 
+  871  vi ../../vendor/google_riscv-dv/run
+  872  vi ../../vendor/google_riscv-dv/files.f 
+  873  pwd
+  874  make clean
+  875  vi Makefile.questa 
+  876  make -f Makefile.questa gen
+  877  export PATH:$PATH:/wv/hdl/ms/10.7d/modeltech/bin
+  878  export PATH=$PATH:/wv/hdl/ms/10.7d/modeltech/bin
+  879  vlog -f ../../vendor/google_riscv-dv/files.f
+  880  pushd ../../vendor/google_riscv-dv/
+  881  vlog -f files.f
+  882  pwd
+  883  cd ../../../ibex.questa/
+  884  ls
+  885  cd dv/
+  886  cd uvm/
+  887  ls
+  888  vi Makefile.questa 
+  889  cd ../../../ibex/vendor/google_riscv-dv
+  890          vlog -64 -work uvm_lib/ +incdir+${MODELTECH_HOME}/verilog_src/uvm-1.2/src                 ${MODELTECH_HOME}/verilog_src/uvm-1.2/src/uvm_pkg.sv                 ${MODELTECH_HOME}/verilog_src/uvm-1.2/src/dpi/uvm_dpi.cc                 -ccflags "-DQUESTA" +acc=all
+  891  export MODELTECH_HOME=/wv/hdl/ms/10.7d/modeltech
+  892          vlog -64 -work uvm_lib/ +incdir+${MODELTECH_HOME}/verilog_src/uvm-1.2/src                 ${MODELTECH_HOME}/verilog_src/uvm-1.2/src/uvm_pkg.sv                 ${MODELTECH_HOME}/verilog_src/uvm-1.2/src/dpi/uvm_dpi.cc                 -ccflags "-DQUESTA" +acc=all
+  893  vlog -f files.f -L ./uvm_lib/
+  894  vlog -f files.f -L ./uvm_lib/ +incdir+$MODELTECH_HOME/include
+  895  find $MODELTECH_HOME -name uvm_macros.svh
+  896  vlog -f files.f -L ./uvm_lib/ +incdir+$MODELTECH_HOME/verilog_src/uvm-1.2
+  897  ls /wv/hdl/ms/10.7d/modeltech/verilog_src/uvm-1.2
+  898  ls /wv/hdl/ms/10.7d/modeltech/verilog_src/uvm-1.2/src/
+  899  ls /wv/hdl/ms/10.7d/modeltech/verilog_src/uvm-1.2/src/macros/
+  900  find $MODELTECH_HOME -name uvm_macros.svh
+  901  ls /wv/hdl/ms/10.7d/modeltech/verilog_src/uvm-1.2/src
+  902  vlog -f files.f -L ./uvm_lib/ +incdir+$MODELTECH_HOME/verilog_src/uvm-1.2/src
+  903  vi ./src/riscv_page_table_list.sv
+  904  grep -r uvm_component_new $MODELTECH_HOME/uvm-1.2 
+  905  grep -r uvm_component_new $MODELTECH_HOME
+  906  grep -r uvm_component_new *
+  907  pwd
+  908  more files.f
+  909  grep dv_defines.svh *
+  910* 
+  911  grep dv_defines.svh *.sv
+  912  grep -r dv_defines.svh *.sv
+  913  grep -r dv_defines.svh *
+  914  more files.f
+  915  vi test/riscv_instr_test_pkg.sv 
+  916  vi test/riscv_instr_test_pkg.sv 
+  917  vi test/riscv_instr_gen_tb_top.sv 
+  918  vlog -f files.f -L ./uvm_lib/ +incdir+$MODELTECH_HOME/verilog_src/uvm-1.2/src
+  919  :q
+  920  grep -r gfn *
+  921  vi ./test/riscv_instr_test_pkg.sv
+  922  vlog -f files.f -L ./uvm_lib/ +incdir+$MODELTECH_HOME/verilog_src/uvm-1.2/src
+  923  ls
+  924  vsim -c riscv_instr_gen_tb_top
+  925  find . -name "*dpi*" -print
+  926  grep -r uvm_dpi_get_tool_name_c *
+  927  vsim -c riscv_instr_gen_tb_top -L uvm_lib/
+  928  vsim -c riscv_instr_gen_tb_top -l uvm_lib/
+  929  vsim -c riscv_instr_gen_tb_top -lib uvm_lib/
+  930  vsim -c riscv_instr_gen_tb_top 
+  931  vsim -lib ./uvm_lib -c riscv_instr_gen_tb_top 
+  932  vsim -lib ./uvm_lib -lib ./work -c riscv_instr_gen_tb_top 
+  933  vsim -lib ./uvm_lib -lib ./work -c riscv_instr_gen_tb_top 
+  934  pwd
+  935  ls
+  936  more run
+  937   
+  938  ls
+  939  more files.f
+  940  vlog -f files.f -L ./uvm_lib/ +incdir+$MODELTECH_HOME/verilog_src/uvm-1.2/src
+  941  history | grep uvm_lib
+  942  pwd
+  943  cd ../../dv/uvm/
+  944  ls
+  945  more Makefile.questa 
+  946  vi Makefile.questa 
+  947  grep gcc Makefile.questa
+  948          gcc -c ${MODELTECH_HOME}/verilog_src/uvm-1.2/src/dpi/uvm_dpi.cc 
+  949          gcc -c ${MODELTECH_HOME}/verilog_src/uvm-1.2/src/dpi/uvm_dpi.cc -I $MODELTECH_HOME/include 
+  950          gcc -c ${MODELTECH_HOME}/verilog_src/uvm-1.2/src/dpi/uvm_dpi.cc -I $MODELTECH_HOME/include -DQUESTA
+  951  ls
+  952          gcc -o uvm_dpi.so -shared -fPIC ${MODELTECH_HOME}/verilog_src/uvm-1.2/src/dpi/uvm_dpi.cc -I $MODELTECH_HOME/include -DQUESTA
+  953  ls -la
+  954  cd ../../vendor/google_riscv-dv
+  955  ls
+  956  vi sim
+  957  vi run
+  958  vi questa_compile
+  959  vi ../../dv/uvm/Makefile.questa 
+  960          vlog -64 -work uvm_lib/ +incdir+${MODELTECH_HOME}/verilog_src/uvm-1.2/src                 ${MODELTECH_HOME}/verilog_src/uvm-1.2/src/uvm_pkg.sv +acc=all
+  961  more questa_compile 
+  962  gcc -o uvm_dpi.so -shared -fPIC ${MODELTECH_HOME}/verilog_src/uvm-1.2/src/dpi/uvm_dpi.cc -I $MODELTECH_HOME/include -DQUESTA
+  963  vlog -f files.f -L uvm_lib
+  964  find $MODELTECH_HOME -name uvm_macros.svh
+  965  vlog -f files.f -L uvm_lib +incdir+$MODELTECH_HOME/verilog_src/uvm-1.2/src
+  966  vsim -L uvm_lib -svlib uvm_dpi riscv_instr_gen_tb_top
+  967  more transcript 
+  968  vsim -L uvm_lib -sv_lib uvm_dpi riscv_instr_gen_tb_top
+  969  export MTI_VCO_MODE=64
+  970  vsim -L uvm_lib -sv_lib uvm_dpi riscv_instr_gen_tb_top
+  971  pwd
+  972  ls
+  973   more sim
+  974  pwd
+  975  more run
+  976  vi run
+  977  grep -r BASH_REMATCH ../../dv/uvm/*
+  978  grep -r BASH_REMATCH *
+  979  grep -r BASH_REMATCH ../../*
+  980  vi run
+  981  ./run
+  982  vi run
+  983  ./run
+  984  vsim -L uvm_lib -sv_lib uvm_dpi riscv_instr_gen_tb_top
+  985  vi run
+  986  vsim -L uvm_lib -sv_lib uvm_dpi riscv_instr_gen_tb_top +UVM_TESTNAME=./out_2019-06-14/asm_tests/riscv_instr_base_test.0.S
+  987  vi run
+  988  ./ru
+  989  ./run
+  990  ( ./run ) >& run.log
+  991  vi run.log
+  992  ./run
+  993  vi run
+  994  ( ./run ) >& run.log
+  995  vi run.log
+  996  vi run
+  997  vi run
+  998  vi run.log 
+  999  vi run
+ 1000  vi run.log 
+ 1001  vi run
+ 1002  vi run.log 
+ 1003  cd ../../monsters_from_space
+ 1004  ls ../../dv/uvm/
+ 1005  cd ../../dv/uvm/
+ 1006  ( make ) >& verification.log 
+ 1007  vi verification.log 
+ 1008  grep gzr *
+ 1009  vi sim
+ 1010  cd ../../vendor/google_riscv-dv
+ 1011  vi run
+ 1012  ./riun
+ 1013  ( ./run ) >& run.log
+ 1014  vi run
+ 1015  vi run.log 
+ 1016  vi run
+ 1017  vsim -L uvm_lib -sv_lib uvm_dpi riscv_instr_gen_tb_top +UVM_TESTNAME=./out_2019-06-14/asm_tests/riscv_instr_base_test.0.S
+ 1018  vi run.log
+ 1019  vsim -L uvm_lib -sv_lib uvm_dpi riscv_instr_gen_tb_top +UVM_TESTNAME=riscv_instr_base_test
+ 1020  vi transcript 
+ 1021  wc -l transcript 
+ 1022  python
+ 1023  users
+ 1024  users
+ 1025  wpd
+ 1026  pwd
+ 1027  histroy
+ 1028  history
+ 1029  ls out_2019-06-14/asm_tests/riscv_instr_base_test.0.S 
+ 1030  file out_2019-06-14/asm_tests/riscv_instr_base_test.0.S
+ 1031  less out_2019-06-14/asm_tests/riscv_instr_base_test.0.S
+ 1032  fg
+ 1033  less out_2019-06-14/asm_tests/riscv_instr_base_test.0.S
+ 1034    
+ 1035  jobs
+ 1036  kill %1
+ 1037  jobs
+ 1038  ;s
+ 1039  ls
+ 1040  history
+ 1041  less out_2019-06-14/asm_tests/riscv_instr_base_test.0.S
+ 1042  fg
+ 1043  stty sane
+ 1044  history > foo

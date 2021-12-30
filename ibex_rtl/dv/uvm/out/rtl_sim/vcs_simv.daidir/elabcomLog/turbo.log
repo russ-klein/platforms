@@ -1,0 +1,5 @@
+Command Line: /wv/hlstools/vcs/N-2017.12/linux64/bin/elabcom -logdir /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/vcs_simv.daidir/elabcomLog -simvdaidir /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/vcs_simv.daidir -lib /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/vcs_simv.daidir/work -saveLevel -elab /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/vcs_simv.daidir/kdb -simflow -simdir /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/vcs_simv.daidir/kdb_libs -top uvm_custom_install_recording core_ibex_tb_top -ssv -ssy -Lf work +disable_message+C00380+C00381
+uname(Linux orw-russk-vm 3.10.0-229.14.1.el7.x86_64 #1 SMP Tue Aug 25 11:21:22 EDT 2015 x86_64)
+[INFO] error/warning message 'C00380' has been suppressed.
+[INFO] error/warning message 'C00381' has been suppressed.
+au time 0.826327 0.270517 0.067689 delta 380854272 380854272 total 477839360 477839360

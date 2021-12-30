@@ -1,0 +1,20 @@
+rc file Version 1.0
+
+[Design]
+COMPILE_PATH=/home/russk/platforms/ibex/dv/uvm
+SystemC=FALSE
+UUM=FALSE
+KDB=TRUE
+USE_NOVAS_HOME=FALSE
+COSIM=FALSE
+TOP=uvm_custom_install_recording core_ibex_tb_top 
+OPTION=-ssv -ssy 
+ELAB_OPTION=-ssv -ssy 
+ELAB=TRUE
+SIMV_WRAPPER=FALSE
+[vcs]
+RUN_ELABCOM=unset TURBO_LOG_DIR ;\rm -rf /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/vcs_simv.daidir/elabcomLog ;/wv/hlstools/vcs/N-2017.12/linux64/bin/elabcom -logdir /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/vcs_simv.daidir/elabcomLog  -simvdaidir /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/vcs_simv.daidir  -lib /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/vcs_simv.daidir/work  -saveLevel  -elab /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/vcs_simv.daidir/kdb -simflow -simdir /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/vcs_simv.daidir/kdb_libs -top 'uvm_custom_install_recording core_ibex_tb_top' -ssv -ssy  -Lf work +disable_message+C00380+C00381  >& /dev/null  && echo Success >& /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/vcs_simv.daidir/.elabcomReport || echo Fail >& /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/vcs_simv.daidir/.elabcomReport; \rm -rf /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/vcs_simv.daidir/work.lib++ /home/russk/platforms/ibex/dv/uvm/out/rtl_sim/vcs_simv.daidir/kdb_libs/ 
+
+[Value]
+WREALX=ffff534e50535f58
+WREALZ=ffff534e50535f5a

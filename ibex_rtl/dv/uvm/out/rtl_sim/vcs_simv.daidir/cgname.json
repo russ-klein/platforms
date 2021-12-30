@@ -1,0 +1,146 @@
+{
+    "_vcs_DPI_package": [
+        "_vcs_DPI_package",
+        "uM9F1",
+        "module",
+        1
+    ],
+    "ibex_defines": [
+        "ibex_defines",
+        "FJrEc",
+        "module",
+        8
+    ],
+    "vcs_paramclassrepository": [
+        "vcs_paramclassrepository",
+        "hEeZs",
+        "module",
+        2
+    ],
+    "ibex_load_store_unit": [
+        "ibex_load_store_unit",
+        "gZKca",
+        "module",
+        14
+    ],
+    "mem_model_pkg": [
+        "mem_model_pkg",
+        "tVTU0",
+        "module",
+        17
+    ],
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        4
+    ],
+    "ibex_mem_intf_agent_pkg": [
+        "ibex_mem_intf_agent_pkg",
+        "pKRq0",
+        "module",
+        19
+    ],
+    "_vcs_unit__2236483462": [
+        "_vcs_unit__2236483462",
+        "aMYZy",
+        "module",
+        3
+    ],
+    "ibex_tracer": [
+        "ibex_tracer",
+        "R58tZ",
+        "module",
+        10
+    ],
+    "uvm_pkg": [
+        "uvm_pkg",
+        "zr7M1",
+        "module",
+        5
+    ],
+    "ibex_cs_registers_0000": [
+        "ibex_cs_registers_0000",
+        "ZYcQd",
+        "module",
+        11
+    ],
+    "_vcs_msglog": [
+        "_vcs_msglog",
+        "zQBzV",
+        "module",
+        6
+    ],
+    "ibex_tracer_defines": [
+        "ibex_tracer_defines",
+        "N8I18",
+        "module",
+        9
+    ],
+    "uvm_custom_install_recording": [
+        "uvm_custom_install_recording",
+        "nhiwz",
+        "module",
+        7
+    ],
+    "ibex_int_controller": [
+        "ibex_int_controller",
+        "dZ9WD",
+        "module",
+        12
+    ],
+    "ibex_ex_block_0000": [
+        "ibex_ex_block_0000",
+        "Yw9K4",
+        "module",
+        13
+    ],
+    "core_ibex_test_pkg": [
+        "core_ibex_test_pkg",
+        "R3IJV",
+        "module",
+        22
+    ],
+    "clk_if": [
+        "clk_if",
+        "DLJvE",
+        "module",
+        15
+    ],
+    "dv_utils_pkg": [
+        "dv_utils_pkg",
+        "p833f",
+        "module",
+        16
+    ],
+    "ibex_mem_intf": [
+        "ibex_mem_intf",
+        "rNCkt",
+        "module",
+        18
+    ],
+    "core_ibex_dut_probe_if": [
+        "core_ibex_dut_probe_if",
+        "fbPCp",
+        "module",
+        20
+    ],
+    "core_ibex_env_pkg": [
+        "core_ibex_env_pkg",
+        "K6IKe",
+        "module",
+        21
+    ],
+    "core_ibex_tb_top": [
+        "core_ibex_tb_top",
+        "zDuCS",
+        "module",
+        23
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        24
+    ]
+}
