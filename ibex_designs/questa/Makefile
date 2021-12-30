@@ -52,7 +52,8 @@ CRUFT         = work                 \
 		terminal.so          \
 		run.do               \
 		run.do.template      \
-		make.out
+		make.out             \
+		../terminal/bin/terminal_emulator
 
 .EXPORT_ALL_VARIABLES:
 
