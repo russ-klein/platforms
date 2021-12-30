@@ -1,0 +1,41 @@
+IBEX_RTL = $(IBEX_HOME)/rtl
+
+SOURCES =       $(IBEX_RTL)/ibex_defines.sv \
+		$(IBEX_RTL)/ibex_tracer_defines.sv \
+		$(IBEX_RTL)/ibex_alu.sv \
+		$(IBEX_RTL)/ibex_compressed_decoder.sv \
+		$(IBEX_RTL)/ibex_controller.sv \
+		$(IBEX_RTL)/ibex_cs_registers.sv \
+		$(IBEX_RTL)/ibex_decoder.sv \
+		$(IBEX_RTL)/ibex_int_controller.sv \
+		$(IBEX_RTL)/ibex_ex_block.sv \
+		$(IBEX_RTL)/ibex_id_stage.sv \
+		$(IBEX_RTL)/ibex_if_stage.sv \
+		$(IBEX_RTL)/ibex_load_store_unit.sv \
+		$(IBEX_RTL)/ibex_multdiv_slow.sv \
+		$(IBEX_RTL)/ibex_multdiv_fast.sv \
+		$(IBEX_RTL)/ibex_prefetch_buffer.sv \
+		$(IBEX_RTL)/ibex_fetch_fifo.sv \
+		$(IBEX_RTL)/ibex_register_file_ff.sv \
+		$(IBEX_RTL)/ibex_tracer.sv \
+		$(IBEX_RTL)/ibex_core.sv \
+		$(IBEX_HOME)/dv/uvm/tb/prim_clock_gating.sv
+
+
+IBEX_LIB = ./ibex_lib
+
+VLOG_OPTS = -work $(IBEX_LIB) +acc=all +incdir+$(IBEX_RTL) +define+TRACE_EXECUTION
+
+ibex_lib: $(SOURCES)
+	@echo "RM      $(IBEX_LIB)"
+	@rm -rf $(IBEX_LIB) >> make.out
+	@echo "VLIB    $(IBEX_LIB)"
+	@$(VLIB) $(IBEX_LIB) >> make.out
+	@echo "VMAP    ibex_lib $(IBEX_LIB)"
+	@$(VMAP) ibex_lib $(IBEX_LIB) >> make.out
+	@echo "VLOG    ibex_core"
+	@$(VLOG) $(VLOG_OPTS) $(SOURCES) >> make.out
+
+clean:
+	@echo "Removing Ibex library"
+	@rm -rf $(IBEX_LIB) >> make.out
