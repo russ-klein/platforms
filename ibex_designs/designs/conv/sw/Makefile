@@ -67,5 +67,5 @@ start.o: $(COMMON)/start.s
 
 clean:
 	@echo "Removing created files and cruft"
-	@rm -f $(PROGRAM).mem $(PROGRAM).bin $(PROGRAM).x $(OBJS) $(PROGRAM).map $(PROGRAM).list 
+	@rm -f $(PROGRAM).mem $(PROGRAM).bin $(PROGRAM).x $(OBJS) $(PROGRAM).map $(PROGRAM).list make.out
 
