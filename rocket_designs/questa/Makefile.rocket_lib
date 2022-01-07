@@ -1,0 +1,38 @@
+#========== Location Specific Settings ==========#
+
+export QUESTA_HOME      ?= /u/release/2020.2/questasim
+
+#================================================#
+
+ROCKET_CORE_HOME   = ../../rocket_rtl/rocket-chip/
+
+VFLAGS             = +define+RANDOMIZE_REG_INIT        \
+                     +define+RANDOMIZE_MEM_INIT        \
+                     +define+RANDOMIZE_GARBAGE_ASSIGN  \
+                     +define+RANDOMIZE_INVALID_ASSIGN  \
+                     +define+RANDOMIZE_DELAY=1         
+#                     +define+CHATTY
+
+VLOG               = $(QUESTA_HOME)/bin/vlog
+VMAP               = $(QUESTA_HOME)/bin/vmap
+VLIB               = $(QUESTA_HOME)/bin/vlib
+
+LIBRARY            = rocket_lib
+
+SOURCES            = $(ROCKET_CORE_HOME)/vsim/generated-src/freechips.rocketchip.system.DefaultConfig.v \
+                     $(ROCKET_CORE_HOME)/src/main/resources/vsrc/AsyncResetReg.v \
+                     $(ROCKET_CORE_HOME)/src/main/resources/vsrc/plusarg_reader.v \
+                     $(ROCKET_CORE_HOME)/src/main/resources/vsrc/EICG_wrapper.v \
+                     $(ROCKET_CORE_HOME)/vsim/generated-src/freechips.rocketchip.system.DefaultConfig.behav_srams.v
+
+$(LIBRARY): $(SOURCES)
+	@echo "VLIB    $(LIBRARY)"
+	@$(VLIB) $(LIBRARY)  >> make.out
+	@echo "VMAP    $(LIBRARY) $(LIBRARY)"
+	@$(VMAP) $(LIBRARY) $(LIBRARY) >> make.out
+	@echo "VLOG    rocket_core"
+	@$(VLOG) -work $(LIBRARY) +acc=all $(VFLAGS) $(SOURCES) >> make.out
+
+clean:
+	@echo "Removing $(LIBRARY)"
+	@rm -rf $(LIBRARY) make.out 
